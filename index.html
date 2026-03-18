@@ -9,6 +9,8 @@
         .tab-content { display: none; }
         .tab-content.active { display: block; }
         .tab-btn.active { border-bottom: 3px solid #3b82f6; color: #1e40af; background-color: #f8fafc; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .animate-fadeIn { animation: fadeIn 0.4s ease-out forwards; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 font-sans p-4 md:p-10">
@@ -48,7 +50,7 @@
 
             <div id="impact" class="tab-content animate-fadeIn">
                 <h2 class="text-2xl font-bold mb-6 text-blue-900 border-b pb-2">Proven Track Record of Impact</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                     <div class="p-6 bg-blue-50 border-l-4 border-blue-600 rounded">
                         <h3 class="font-bold text-blue-900">Capital Projects</h3>
                         <p class="text-slate-700">Providing technical oversight for a $139M filter upgrade project to modernize infrastructure.</p>
@@ -65,6 +67,13 @@
                         <h3 class="font-bold text-purple-900">Safety & Awards</h3>
                         <p class="text-slate-700">Earned the AWWA Partnership for Safe Drinking Water award for the facility.</p>
                     </div>
+                </div>
+                
+                <div class="flex justify-end pt-4 border-t border-slate-100">
+                    <a href="Ashifali Saiyad Resume W.Q Manager.pdf" download class="inline-flex items-center px-4 py-2 bg-slate-800 text-white text-sm font-medium rounded hover:bg-slate-700 transition-colors shadow-sm">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        Download Resume (PDF)
+                    </a>
                 </div>
             </div>
 

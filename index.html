@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Portfolio | Ashifali M. Saiyad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab-btn.active { border-bottom: 3px solid #3b82f6; color: #1e40af; background-color: #f8fafc; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans p-4 md:p-10">
+
+    <div class="max-w-5xl mx-auto bg-white shadow-2xl rounded-xl overflow-hidden border border-slate-200">
+        
+        <header class="bg-gradient-to-r from-slate-800 to-blue-900 text-white p-8">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                <div>
+                    <h1 class="text-4xl font-extrabold tracking-tight">Ashifali M. Saiyad</h1>
+                    <p class="text-xl text-blue-200 mt-1 font-medium">Strategic Water Industry Leader | EGLE F-1 Certified</p>
+                </div>
+                <div class="mt-4 md:mt-0 text-sm space-y-1 text-slate-300">
+                    <p>📍 1360 South Allen Road, St. Clair Township, MI 48079</p>
+                    <p>📧 saiyad70@gmail.com | 📞 810-357-1829</p>
+                </div>
+            </div>
+        </header>
+
+        <nav class="flex border-b border-slate-200 bg-slate-100 overflow-x-auto">
+            <button class="tab-btn active px-8 py-4 text-slate-600 font-bold hover:bg-white transition-all focus:outline-none" onclick="openTab(event, 'letter')">Letter of Interest</button>
+            <button class="tab-btn px-8 py-4 text-slate-600 font-bold hover:bg-white transition-all focus:outline-none" onclick="openTab(event, 'impact')">Impact & Achievements</button>
+            <button class="tab-btn px-8 py-4 text-slate-600 font-bold hover:bg-white transition-all focus:outline-none" onclick="openTab(event, 'competencies')">Core Competencies</button>
+            <button class="tab-btn px-8 py-4 text-slate-600 font-bold hover:bg-white transition-all focus:outline-none" onclick="openTab(event, 'experience')">Professional Experience</button>
+        </nav>
+
+        <div class="p-8 min-h-[500px]">
+            
+            <div id="letter" class="tab-content active animate-fadeIn">
+                <h2 class="text-2xl font-bold mb-6 text-blue-900 border-b pb-2">Letter of Interest</h2>
+                <div class="space-y-4 text-slate-700 leading-relaxed text-lg">
+                    <p>With 29 years of extensive experience in water treatment, an EGLE F-1 Certification (the highest classification in Michigan), and a proven track record in municipal leadership, I am confident in my ability to manage complex water facilities and distribution systems with excellence.</p>
+                    <p>Currently serving as Lab Leader & Operations In-Charge at the Great Lakes Water Authority’s (GLWA) Northeast Water Plant, I manage complex regulatory requirements and major capital improvements. I am currently providing technical oversight for a $139M filter upgrade project, ensuring that construction does not compromise operational continuity or water quality.</p>
+                    <p>As a graduate of the Michigan Public Service Institute (MPSI) through Central Michigan University, I am trained in municipal management and inter-departmental coordination. I am eager to bring my technical expertise and fiscal responsibility to ensure the continued delivery of high-quality potable water to residents.</p>
+                </div>
+            </div>
+
+            <div id="impact" class="tab-content animate-fadeIn">
+                <h2 class="text-2xl font-bold mb-6 text-blue-900 border-b pb-2">Proven Track Record of Impact</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="p-6 bg-blue-50 border-l-4 border-blue-600 rounded">
+                        <h3 class="font-bold text-blue-900">Capital Projects</h3>
+                        <p class="text-slate-700">Providing technical oversight for a $139M filter upgrade project to modernize infrastructure.</p>
+                    </div>
+                    <div class="p-6 bg-green-50 border-l-4 border-green-600 rounded">
+                        <h3 class="font-bold text-green-900">Fiscal Responsibility</h3>
+                        <p class="text-slate-700">Achieved a 30% reduction in wastewater treatment costs through rigorous process optimization.</p>
+                    </div>
+                    <div class="p-6 bg-amber-50 border-l-4 border-amber-600 rounded">
+                        <h3 class="font-bold text-amber-900">Operational Excellence</h3>
+                        <p class="text-slate-700">Recipient of the Mayoral Award of Achievement for excellence in water quality.</p>
+                    </div>
+                    <div class="p-6 bg-purple-50 border-l-4 border-purple-600 rounded">
+                        <h3 class="font-bold text-purple-900">Safety & Awards</h3>
+                        <p class="text-slate-700">Earned the AWWA Partnership for Safe Drinking Water award for the facility.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="competencies" class="tab-content animate-fadeIn">
+                <h2 class="text-2xl font-bold mb-6 text-blue-900 border-b pb-2">Core Competencies</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <h3 class="text-lg font-bold text-slate-800 uppercase tracking-wide">Technical Leadership</h3>
+                        <ul class="list-disc pl-5 space-y-2 text-slate-700">
+                            <li><strong>Regulatory Affairs:</strong> Expert knowledge of Michigan Safe Drinking Water Act (Act 399).</li>
+                            <li><strong>Infrastructure Management:</strong> Filter upgrades, design modifications, and asset management.</li>
+                            <li><strong>Compliance:</strong> Lead liaison for EGLE and EPA; Monthly Report management.</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <h3 class="text-lg font-bold text-slate-800 uppercase tracking-wide">Strategic Operations</h3>
+                        <ul class="list-disc pl-5 space-y-2 text-slate-700">
+                            <li><strong>Safety & Risk:</strong> Specialist in PSM-RMP and Homeland Security risk mitigation.</li>
+                            <li><strong>Public Service:</strong> MPSI trained in municipal management and inter-departmental coordination.</li>
+                            <li><strong>Lab Operations:</strong> Lead QA/QC programs, chemical inventory, and lab certifications.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-8 p-4 bg-slate-800 rounded-lg text-white text-center">
+                    <p class="font-bold">Certifications: EGLE F-1, F-2, F-3, F-4 | EGLE S-3, S-4 | MPSI Graduate</p>
+                </div>
+            </div>
+
+            <div id="experience" class="tab-content animate-fadeIn">
+                <h2 class="text-2xl font-bold mb-6 text-blue-900 border-b pb-2">Professional Experience</h2>
+                <div class="space-y-8">
+                    <div>
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="text-xl font-bold text-slate-800">Lab Leader & Operations In-Charge</h3>
+                            <span class="text-blue-700 font-bold">2021 – Present</span>
+                        </div>
+                        <p class="italic text-slate-600">Northeast Water Plant, Great Lakes Water Authority (GLWA)</p>
+                        <p class="mt-2 text-slate-700 leading-relaxed">Directs laboratory operations and ensures full compliance with EGLE and Lead QA/QC programs. Acts as lead liaison for regulatory bodies and spearheads plant modernization projects.</p>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="text-xl font-bold text-slate-800">Chemist III / Senior Water Treatment Chemist</h3>
+                            <span class="text-blue-700 font-bold">1996 – 2021</span>
+                        </div>
+                        <p class="italic text-slate-600">Lake Huron Water Plant, GLWA / DWSD</p>
+                        <p class="mt-2 text-slate-700 leading-relaxed">Served as Shift-in-Charge for water production. Authored SOPs that streamlined laboratory testing and operational workflows at one of Michigan's largest plants.</p>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="text-xl font-bold text-slate-800">QC Chemist / Supervisor</h3>
+                            <span class="text-blue-700 font-bold">1991 – 1996</span>
+                        </div>
+                        <p class="italic text-slate-600">Saturn Electronics & BASF Corp. Unit</p>
+                        <p class="mt-2 text-slate-700 leading-relaxed">Supervised industrial chemistry teams and achieved significant cost reductions in wastewater treatment through optimization.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="bg-slate-100 p-6 text-center text-slate-500 text-sm border-t border-slate-200">
+            &copy; 2026 Ashifali M. Saiyad - Professional Portfolio
+        </footer>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            document.getElementById(tabName).style.display = "block";
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>
